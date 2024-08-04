@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-container {
+  margin: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(216, 16, 16, 0.959);
+  width: 200px; 
+}
+
+.image-container a {
+  display: block;
+  text-decoration: none;
+}
+
+.image-container img {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+.image-container h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: rgb(255, 254, 254);
+  padding: 10px;
+  margin: 0;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover h3 {
+  opacity: 1; /* Mostrar título al pasar el ratón sobre el contenedor */
+}
+
+
+
+
+
+  
